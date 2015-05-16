@@ -1,0 +1,127 @@
+\documentclass{article}
+\usepackage{enumitem}
+\usepackage[document]{ragged2e}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{positioning}
+\tikzstyle{block} = [rectangle, draw, 
+    text width=4in, text centered, minimum height=2em]
+\tikzstyle{block2} = [rectangle, draw, 
+    text width=2in, text centered, minimum height=2em]
+\tikzstyle{line} = [draw, -latex']
+\renewcommand{\labelitemi}{\labelitemii}
+\renewcommand{\labelitemiii}{\labelitemii}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage[paperwidth=30in,paperheight=36in,top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage{lipsum}
+\usepackage{fontspec}
+\usepackage{tikz}
+\usetikzlibrary{matrix,chains,positioning,decorations.pathreplacing,arrows}
+
+% \setmainfont[SizeFeatures={{Size=-11,Color=red},
+%                            {Size=11-30,Color=blue},
+%                            {Size=30-,Color=green}}]{Univers LT Std}
+
+% \renewcommand*{\familydefault}{\sfdefault}
+
+% DIN 1451 Std or DIN 30640 Std for descriptions
+% Trade Gothic LT for titles
+\begin{document}
+\begin{minipage}[c]{28in}
+{ 
+\fontspec{Trade Gothic LT}[Color=red]
+\fontsize{3.5in}{0.5in}\selectfont 
+\bfseries
+% SOMETHING FOR 
+
+% \vspace{0.5in}
+
+% EVERYONE:
+
+% \vspace{0.5in}
+
+% A COMEDY TONIGHT?
+
+ROUND UP THE
+
+\vspace{0.5in}
+
+{\addfontfeature{Color=darkgray} (UN)}USUAL 
+
+\vspace{0.5in}
+
+SUSPECTS!
+
+}
+\end{minipage}
+\vspace{1in}\\
+\colorbox{white}{
+\begin{minipage}{28in}
+\centering
+\includegraphics[width=27in]{figure.pdf}
+\end{minipage}
+}
+\vspace{1in}\\
+{
+\fontspec{DIN 1451 Std}[Color=black]]
+\fontsize{1in}{1em}\selectfont 
+CHRIS CURRO
+}
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{0.8in}{1em}\selectfont 
+EE '15,
+}
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{1in}{1em}\selectfont 
+DAVID KATZ
+}
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{0.8in}{1em}\selectfont 
+EE '15 AND
+}
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{1in}{1em}\selectfont 
+HARRISON ZHAO
+}
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{0.8in}{1em}\selectfont 
+EE '16, ADVISOR: SAM KEENE
+}
+\vspace{0.8in}\\
+\begin{minipage}{15.5in}
+{
+	% \fontspec{DIN 30640 Std}
+	\fontspec{DIN 1451 Std}[Color=black]
+	\fontsize{0.6in}{8em}\selectfont
+
+	We created a movie recommendation system that allows users to pick what
+	they're interested in based on ten features, and how important it is that we
+	pick movies similar to each of those features. The specific features were
+	learned by a statistical model called an autoencoder which found
+	meaningful relationships between a set of one thousand tags on each movie
+	to create a set of ten descriptors. Some of the feature ratings produced by
+	our autoencoder can be seen above.
+
+
+} \end{minipage} 
+\hfill
+\begin{minipage}{10in}
+{
+	\fontspec{DIN 1451 Std}[Color=black]
+	\fontsize{0.6in}{8em}\selectfont
+	\begin{tabbing}
+	Source Code: \= github.com/katzdave/MovieRecommendation\\
+	More Info: \> ee.cooper.edu/\textasciitilde{}curro/movieRec.pdf\\
+	Note: \> An interactive demo will be available for \\ \> the duration of the public exhibition.
+	\end{tabbing}
+} \end{minipage} 
+\end{document}
+
