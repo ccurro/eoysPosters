@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage[export]{adjustbox}
+\usepackage{amsmath}
+\usepackage[paperwidth=30in,paperheight=36in,top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage{fontspec}
+
+% DIN 1451 Std or DIN 30640 Std for descriptions
+% Trade Gothic LT for titles
+\begin{document}
+\vspace{-2in}
+\begin{minipage}{28in}
+\centering
+\includegraphics[width=31in,set height=22.75in,lap=-2in]{figure.png}
+\end{minipage}
+\vspace{0.8in}\\
+\begin{minipage}[c]{28in}
+{ 
+\fontspec{Trade Gothic LT}[Color=red]
+\fontsize{2.7in}{0.8in}\selectfont 
+\bfseries
+PHASE LOCKED LOOP
+}
+\end{minipage}
+\vspace{1in}\\
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{1in}{1em}\selectfont 
+STEPHEN LEONE
+}
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{0.8in}{1em}\selectfont 
+EE '16 AND
+}
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{1in}{1em}\selectfont 
+ELI SOFFER 
+}
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{0.8in}{1em}\selectfont 
+EE '16, ADVISOR: TOBY CUMBERBATCH
+}
+\vspace{0.8in}\\
+\begin{minipage}{16.8in}
+{
+	\fontspec{DIN 1451 Std}[Color=black]
+	\fontsize{0.6in}{8em}\selectfont
+
+	We designed and tested a phase locked loop with the Cadence Design Suite. This included
+	actually specifying the precise locations of semiconductor material for the fabrication
+	of our phase locked loop on an integrated circuit. Phase locked loops take an input signal
+	and closely track its frequency allowing for a variety of applications including the 
+	demodulation of FM radio signals and keeping the components of a computer synchronized.
+
+
+} \end{minipage} 
+\hspace{2in}
+\begin{minipage}{11in}
+{
+	\fontspec{DIN 1451 Std}[Color=black]
+	\fontsize{0.6in}{8em}\selectfont
+	\begin{tabbing}
+	More Info: \= {\ttfamily link to paper}
+	\end{tabbing}
+} 
+\end{minipage} 
+\end{document}
