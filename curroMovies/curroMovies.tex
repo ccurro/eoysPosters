@@ -3,6 +3,7 @@
 \usepackage{graphicx}
 \usepackage{microtype}
 \usepackage{amsmath}
+\usepackage{hanging}
 \usepackage[paperwidth=30in,paperheight=36in,top=1in,bottom=1in,left=1in,right=1in]{geometry}
 \usepackage{fontspec}
 % DIN 1451 Std or DIN 30640 Std for descriptions
@@ -76,7 +77,7 @@ EE '16, ADVISOR: SAM KEENE
 \vspace{0.8in}\\
 \begin{minipage}{15.5in}
 {
-	\fontspec{DIN 1451 Std}[Color=black]
+	\fontspec{DIN 1451 Std}[Color=black,Ligatures=TeX]
 	\fontsize{0.6in}{8em}\selectfont
 
 	We created a movie recommendation system that allows users to pick what
@@ -87,6 +88,14 @@ EE '16, ADVISOR: SAM KEENE
 	to create a set of ten descriptors. Some of the feature ratings produced by
 	our autoencoder can be seen above.
 
+	\vspace{0.5in}
+	\begin{hangpunct}
+	In our interactive demo, a user can load a given movie's set of features by typing 
+	its name into the search bar at the top of the page and then clicking
+	``Load Features.'' The user can then adjust feature values and relevancies to fit
+	their particular tastes. The user then clicks ``Recommend Movies'' and enjoys 
+	our suggestions!
+	\end{hangpunct}
 
 }
 \end{minipage} 
