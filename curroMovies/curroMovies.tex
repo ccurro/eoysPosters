@@ -4,16 +4,16 @@
 \usepackage{microtype}
 \usepackage{amsmath}
 \usepackage{hanging}
-\usepackage[paperwidth=30in,paperheight=36in,top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage[paperwidth=24in,paperheight=30in,top=1in,bottom=2in,left=1in,right=1in]{geometry}
 \usepackage{fontspec}
 \pagestyle{empty}
 % DIN 1451 Std or DIN 30640 Std for descriptions
 % Trade Gothic LT for titles
 \begin{document}
-\begin{minipage}[c]{28in}
+\begin{minipage}[c]{20in}
 { 
 \fontspec{Trade Gothic LT}[Color=red]
-\fontsize{3.5in}{0.5in}\selectfont 
+\fontsize{3in}{0.5in}\selectfont 
 \bfseries
 % SOMETHING FOR 
 
@@ -26,22 +26,25 @@
 % A COMEDY TONIGHT?
 
 ROUND UP THE
-
-\vspace{0.5in}
+}
+{ 
+\fontspec{Trade Gothic LT}[Color=red]
+\fontsize{3.97in}{0.5in}\selectfont 
+\bfseries
+% \vspace{0.5in}
 
 {\addfontfeature{Color=darkgray} (UN)}USUAL 
 
-\vspace{0.5in}
+\vspace{0.4in}
 
 SUSPECTS!
-
 }
 \end{minipage}
 \vspace{1in}\\
 \colorbox{white}{
-\begin{minipage}{28in}
+\begin{minipage}{21in}
 \centering
-\includegraphics[width=27in]{figure.pdf}
+\includegraphics[width=21in]{figure.pdf}
 \end{minipage}
 }
 \vspace{1in}\\
@@ -73,13 +76,21 @@ HARRISON ZHAO
 {
 \fontspec{DIN 1451 Std}[Color=black]
 \fontsize{0.8in}{1em}\selectfont 
-EE '16, ADVISOR: SAM KEENE
+EE '16
+}
+
+\vspace{0.2in}
+
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{0.8in}{1em}\selectfont 
+\noindent ADVISOR: SAM KEENE
 }
 \vspace{0.8in}\\
-\begin{minipage}{15.5in}
+\begin{minipage}{11in}
 {
 	\fontspec{DIN 1451 Std}[Color=black,Ligatures=TeX]
-	\fontsize{0.6in}{8em}\selectfont
+	\fontsize{0.58in}{6em}\selectfont
 
 	We created a movie recommendation system that allows users to pick what
 	they're interested in based on ten features, and how important it is that we
@@ -89,22 +100,22 @@ EE '16, ADVISOR: SAM KEENE
 	to create a set of ten descriptors. Some of the feature ratings produced by
 	our autoencoder can be seen above.
 
-	\vspace{0.5in}
-	\begin{hangpunct}
-	In our interactive demo, a user can load a given movie's set of features by typing 
-	its name into the search bar at the top of the page and then clicking
-	``Load Features.'' The user can then adjust feature values and relevancies to fit
-	their particular tastes. The user then clicks ``Recommend Movies'' and enjoys 
-	our suggestions!
-	\end{hangpunct}
+	% \vspace{0.5in}
+	% \begin{hangpunct}
+	% In our interactive demo, a user can load a given movie's set of features by typing 
+	% its name into the search bar at the top of the page and then clicking
+	% ``Load Features.'' The user can then adjust feature values and relevancies to fit
+	% their particular tastes. The user then clicks ``Recommend Movies'' and enjoys 
+	% our suggestions!
+	% \end{hangpunct}
 
 }
 \end{minipage} 
 \hfill
-\begin{minipage}{10in}
+\begin{minipage}{8in}
 {
 	\fontspec{DIN 1451 Std}[Color=black]
-	\fontsize{0.6in}{8em}\selectfont
+	\fontsize{0.55in}{5.5em}\selectfont
 	\begin{tabbing}
 	Source Code: \= github.com/katzdave/MovieRecommendation\\
 	More Info: \> ee.cooper.edu/\textasciitilde{}curro/movieRec.pdf\\

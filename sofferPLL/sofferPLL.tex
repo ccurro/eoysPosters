@@ -4,28 +4,29 @@
 \usepackage{microtype}
 \usepackage[export]{adjustbox}
 \usepackage{amsmath}
-\usepackage[paperwidth=30in,paperheight=36in,top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage[paperwidth=24in,paperheight=30in,top=1in,bottom=2in,left=1in,right=1in]{geometry}
 \usepackage{fontspec}
 \pagestyle{empty}
 
 % DIN 1451 Std or DIN 30640 Std for descriptions
 % Trade Gothic LT for titles
 \begin{document}
-\vspace{-2in}
-\begin{minipage}{28in}
+% \vspace{-5in}
+\begin{minipage}{\textwidth}
 \centering
-\includegraphics[width=31in,set height=22.75in,lap=-2in]{figure.png}
+\includegraphics[width=23in,set height=16in,lap=-.7in,clip=true,trim=0 0 0 3in]{figure.png}
+% \includegraphics[width=23in,lap=-0.7in,clip=true,trim=0 0 0 4in]{figure.png}
 \end{minipage}
 \vspace{0.8in}\\
-\begin{minipage}[c]{28in}
+\begin{minipage}[c]{20in}
 { 
 \fontspec{Trade Gothic LT}[Color=red]
-\fontsize{2.7in}{0.8in}\selectfont 
+\fontsize{2.2in}{0.8in}\selectfont 
 \bfseries
 PHASE LOCKED LOOP
 }
 \end{minipage}
-\vspace{1in}\\
+\vspace{0.65in}\\
 {
 \fontspec{DIN 1451 Std}[Color=black]
 \fontsize{1in}{1em}\selectfont 
@@ -46,11 +47,11 @@ ELI SOFFER
 \fontsize{0.8in}{1em}\selectfont 
 EE '16, ADVISOR: TOBY CUMBERBATCH
 }
-\vspace{0.8in}\\
-\begin{minipage}{16.8in}
+\vspace{0.76in}\\
+\begin{minipage}{12.8in}
 {
 	\fontspec{DIN 1451 Std}[Color=black]
-	\fontsize{0.6in}{8em}\selectfont
+	\fontsize{0.6in}{6.5em}\selectfont
 
 	We designed and tested a phase locked loop with the Cadence Design Suite. This included
 	actually specifying the precise locations of semiconductor material for the fabrication
@@ -60,8 +61,8 @@ EE '16, ADVISOR: TOBY CUMBERBATCH
 
 
 } \end{minipage} 
-\hspace{2in}
-\begin{minipage}{11in}
+\hspace{1in}
+\begin{minipage}{6in}
 {
 	\fontspec{DIN 1451 Std}[Color=black]
 	\fontsize{0.6in}{8em}\selectfont

@@ -3,7 +3,7 @@
 \usepackage{graphicx}
 \usepackage{microtype}
 \usepackage{amsmath}
-\usepackage[paperwidth=30in,paperheight=36in,top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage[paperwidth=24in,paperheight=30in,top=1in,bottom=2in,left=1in,right=1in]{geometry}
 \usepackage{fontspec}
 \pagestyle{empty}
 % DIN 1451 Std or DIN 30640 Std for descriptions
@@ -12,16 +12,23 @@
 \begin{minipage}[c]{20in}
 { 
 \fontspec{Trade Gothic LT}[Color=red]
-\fontsize{4in}{0.8in}\selectfont 
+\fontsize{3.5in}{0.8in}\selectfont 
 \bfseries
-WHO'S THAT \vspace{0.5in}\\ PLANKTON?
+WHO'S THAT %\vspace{0.5in}\\ PLANKTON?
+}
+\vspace{0.5in}\\ 
+{
+\fontspec{Trade Gothic LT}[Color=red]
+\fontsize{3.62in}{0.8in}\selectfont 
+\bfseries
+PLANKTON?
 }
 \end{minipage}
 \vspace{1in}\\
 \colorbox{white}{
-\begin{minipage}{28in}
+\begin{minipage}{21in}
 \centering
-\includegraphics[width=25in]{figure.pdf}
+\includegraphics[width=20in]{figure.pdf}
 \end{minipage}
 }
 \vspace{1in}\\
@@ -46,10 +53,10 @@ HARRISON ZHAO
 EE '16, ADVISOR: SAM KEENE
 }
 \vspace{0.8in}\\
-\begin{minipage}{16.8in}
+\begin{minipage}{12in}
 {
 	\fontspec{DIN 1451 Std}[Color=black]
-	\fontsize{0.6in}{8em}\selectfont
+	\fontsize{0.6in}{6.5em}\selectfont
 
     We created a system for the automatic classification of different species
 	of plankton. We utilize convolutional neural networks and the Torch 7 framework
@@ -64,7 +71,7 @@ EE '16, ADVISOR: SAM KEENE
 \begin{minipage}{11in}
 {
 	\fontspec{DIN 1451 Std}[Color=black]
-	\fontsize{0.6in}{8em}\selectfont
+	\fontsize{0.6in}{6.5em}\selectfont
 	\begin{tabbing}
 	Source Code: \= github.com/harrisonzhao/plankton \\
 	More Info: \> ee.cooper.edu/\textasciitilde{}curro/plankton.pdf
