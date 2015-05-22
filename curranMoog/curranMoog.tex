@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage[paperwidth=24in,paperheight=30in,top=1in,bottom=2in,left=1in,right=1in]{geometry}
+\usepackage{fontspec}
+\pagestyle{empty}
+% DIN 1451 Std or DIN 30640 Std for descriptions
+% Trade Gothic LT for titles
+\begin{document}
+\begin{minipage}[c]{20in}
+{ 
+\fontspec{Trade Gothic LT}[Color=red]
+\fontsize{2.25in}{0.8in}\selectfont 
+\bfseries
+THE MOOGER UNION
+}
+\end{minipage}
+
+\begin{minipage}{21in}
+\centering
+\includegraphics[width=20in]{figure.png}
+\end{minipage}
+\vspace{1in}\\
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{0.9in}{1em}\selectfont 
+HOWIE CHEN, ELLIOT CURRAN, ELI FRIEDMAN, AHUVA LANDMAN,\vspace{0.25in}\\ 
+}
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{0.9in}{1em}\selectfont 
+DOLEN LE, STEPHEN LEONE,
+ERIC NGUYEN, JUSTIN POSERIO,\vspace{0.25in}\\ NOAH SANTACRUZ, JASON SCHMIDT, SAMUEL ZHANG
+}
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{0.8in}{1em}\selectfont 
+EE '16
+}
+\vspace{0.25in}
+
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{0.8in}{1em}\selectfont 
+\noindent ADVISOR: TOBY CUMBERBATCH
+}
+\vspace{0.8in}\\
+\begin{minipage}{16in}
+{
+	\fontspec{DIN 1451 Std}[Color=black]
+	\fontsize{0.6in}{6.5em}\selectfont
+
+	The Mooger Union is a moog synthesizer. It is a modular electronic music system
+	which generates a huge variety sounds through a series of analog circuits. Sounds are user
+	controllable and customizable by adjusting knobs and other controls. The synthesizer
+	connects via MIDI to an electronic keyboard, and outputs a signal that can be played through
+	a speaker.
+
+	\vspace{0.5in}
+
+	The controls are divided into several functional blocks. The voltage controlled oscillator
+	(VCO) creates basic signals at different frequencies. The voltage controlled filter (VCF)
+	applies a filter to the signal which alters the timbre. An attack, delay, and release (ADR) can
+	be defined. Those shape each signal. A low frequency oscillation (LFO) can be added to the
+	VCO or to the ADR which can create different effects such as tremolo.
+
+
+} \end{minipage} 
+\end{document}
+
