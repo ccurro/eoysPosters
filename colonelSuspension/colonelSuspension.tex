@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{hanging}
+\usepackage[paperwidth=24in,paperheight=30in,top=1in,bottom=2in,left=1in,right=1in]{geometry}
+\usepackage{fontspec}
+\pagestyle{empty}
+% DIN 1451 Std or DIN 30640 Std for descriptions
+% Trade Gothic LT for titles
+\begin{document}
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[width=23in,lap=-.7in,set height=16.2in,clip=true,trim=0 0 0 0.78in]{figure2.png}
+\end{minipage}
+\vspace{0.8in}\\
+\begin{minipage}[c]{20in}
+{ 
+\fontspec{Trade Gothic LT}[Color=red]
+\fontsize{3.3in}{0.5in}\selectfont 
+\bfseries
+SUSPENSION
+}
+\end{minipage}
+\vspace{0.5in}\\
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{1in}{1em}\selectfont 
+JOSEPH COLONEL 
+}
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{0.8in}{1em}\selectfont 
+EE '15,
+}
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{0.8in}{1em}\selectfont 
+\noindent ADVISOR: ZAK POFF
+}
+\vspace{0.5in}\\
+\begin{minipage}{13.4in}
+{
+	\fontspec{DIN 1451 Std}[Color=black,Ligatures=TeX]
+	\fontsize{0.65in}{6em}\selectfont
+
+Suspension uses a database of medical images taken from 2006-2008 and recorded
+segments of sound to create an audio-visual piece. Inspired by John Cage’s
+cassette tape work, the audio samples are divided into four categories: voice,
+percussion, drone, and other. The MATLAB code randomly composes an audio track
+using these components and chooses an image from the database. The final track
+and images are saved in the workspace.  
+
+} 
+\end{minipage}
+   \end{document}
