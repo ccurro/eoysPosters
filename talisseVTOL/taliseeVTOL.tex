@@ -1,0 +1,94 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{hanging}
+\usepackage[paperwidth=24in,paperheight=30in,top=1in,bottom=2in,left=1in,right=1in]{geometry}
+\usepackage{fontspec}
+\pagestyle{empty}
+% DIN 1451 Std or DIN 30640 Std for descriptions
+% Trade Gothic LT for titles
+\begin{document}
+\begin{minipage}[c]{20in}
+{ 
+\fontspec{Trade Gothic LT}[Color=red]
+\fontsize{2.2in}{0.5in}\selectfont 
+\bfseries
+VERTICAL TAKE-OFF 
+}
+{ 
+\fontspec{Trade Gothic LT}[Color=red]
+\fontsize{2.02in}{0.5in}\selectfont 
+\bfseries
+
+\vspace{-0.1in}
+
+AND LANDING RADIO
+}
+{ 
+\fontspec{Trade Gothic LT}[Color=red]
+\fontsize{1.8in}{0.5in}\selectfont 
+\bfseries
+
+\vspace{0.3in}
+
+CONTROLLED AIRPLANE
+}
+\end{minipage}
+\vspace{1in}\\
+\begin{minipage}{21in}
+\centering
+% \includegraphics[width=21in]{figure.png}
+\includegraphics[scale=1]{figure.png}
+\end{minipage}
+\vspace{1in}\\
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{1in}{1em}\selectfont 
+HANNAH TALISSE 
+}
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{0.8in}{1em}\selectfont 
+AND
+}
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{1in}{1em}\selectfont 
+ALEX NOVOSELOV
+}
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{0.8in}{1em}\selectfont 
+ME '15,
+}
+% 
+% \vspace{0.2in}
+% 
+{
+\fontspec{DIN 1451 Std}[Color=black]
+\fontsize{0.8in}{1em}\selectfont 
+\noindent ADVISOR: DAVID WOOTON
+}
+\vspace{0.8in}\\
+\begin{minipage}{16.4in}
+{
+	\fontspec{DIN 1451 Std}[Color=black,Ligatures=TeX]
+	\fontsize{0.58in}{6em}\selectfont
+
+	We designed and built an airplane with vertical take off and landing (VTOL)
+	capability. This was achieved through a quad tilt rotor design, in which
+	four brushless DC motors are mounted to each wing tip. These motors
+	provide upward thrust in VTOL mode, and gradually rotate to provide
+	forward thrust in flight mode. Such a design can provide advantages in
+	flight by combining the efficiency of airplanes' forward flight with the
+	desirability of being able to take off and land without a runway. The
+	plane was designed and constructed to be a small-scale radio controlled
+	airplane, with a 5 foot wingspan. The plane is capable of carrying a 5
+	pound payload, which is important for future payload delivery
+	applications.
+
+}
+\end{minipage}  
+\end{document}
