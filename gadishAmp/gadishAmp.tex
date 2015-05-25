@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage[paperwidth=11in,paperheight=7in,top=0.5in,bottom=0.5in,left=0.5in,right=0.82in]{geometry}
+\usepackage{fontspec}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% DIN 1451 Std or DIN 30640 Std for descriptions
+% Trade Gothic LT for titles
+\begin{document}
+{
+	\fontspec{Trade Gothic LT}[Color=red]
+	\fontsize{0.8in}{0.4in}\selectfont 
+	\bfseries
+	VACUUM TUBE PRE-AMP
+}
+
+\vspace{0.25in}
+
+{
+	\fontspec{DIN 1451 Std}
+	\fontsize{0.55in}{0.6in}\selectfont
+	AVI GADISH {\fontsize{0.4in}{0.6in}\selectfont EE '15 AND} DENNIS GAVRILOV {\fontsize{0.4in}{0.6in}\selectfont EE '16}
+}
+
+\vspace{0.1in}
+
+{
+	\fontspec{DIN 1451 Std}
+	\fontsize{0.4in}{0.4in}\selectfont
+	ADVISOR: TIM HOERNING
+}
+
+\vspace{0.2in}
+
+{
+	\fontspec{DIN 1451 Std}[Ligatures=TeX]
+	\fontsize{0.397in}{0.46in}\selectfont
+
+		In satisfaction of a ECE314 ``Audio Engineering Projects'' project
+		utilizing antiquated technologies, a vacuum tube pre-amplifier circuit
+		was designed and prototyped. A vacuum tube is a voltage amplifier,
+		which was slowly phased out after the invention of the transistor.
+		Vacuum tubes distort waveforms differently, and more harmonically,
+		than a transistor, which is the reason vacuum tubes are still sought
+		after by audiophiles around the world. In addition to `Gain' and
+		`Level' control, the design of the Tone Stack from the Fender Super
+		Reverb guitar amplifier was modified and implemented in our pre-amp.
+
+}
+
+\end{document}
