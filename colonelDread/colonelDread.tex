@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage[paperwidth=11in,paperheight=5.5in,top=0.5in,bottom=0.5in,left=0.5in,right=0.82in]{geometry}
+\usepackage{fontspec}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% DIN 1451 Std or DIN 30640 Std for descriptions
+% Trade Gothic LT for titles
+\begin{document}
+{
+	\fontspec{Trade Gothic LT}[Color=red]
+	\fontsize{0.8in}{0.4in}\selectfont 
+	\bfseries
+	dreadWah
+}
+
+\vspace{0.25in}
+
+{
+	\fontspec{DIN 1451 Std}
+	\fontsize{0.55in}{0.6in}\selectfont
+	JOSEPH COLONEL {\fontsize{0.4in}{0.6in}\selectfont AND} GABRIEL LOPEZ {\fontsize{0.4in}{0.6in}\selectfont EE '15}
+}
+
+\vspace{0.1in}
+
+{
+	\fontspec{DIN 1451 Std}
+	\fontsize{0.4in}{0.4in}\selectfont
+	ADVISOR: TIM HOERNING
+}
+
+\vspace{0.2in}
+
+{
+	\fontspec{DIN 1451 Std}[Ligatures=TeX]
+	\fontsize{0.41in}{0.46in}\selectfont
+
+		dreadWah is an automated Wah-Wah guitar effect. An Arduino controls
+		two motors that randomly drag a piece of graphite across a drawing.
+		The contact between the graphite and the drawing creates a resistance
+		that varies the resonance and tone of the effect circuit. This effect
+		circuit alters the input audio, similar to the effects used in Funk
+		music.
+
+}
+
+\end{document}
