@@ -1,4 +1,7 @@
 # eoysPosters
 Posters for the 2015 End of Year Show at The Cooper Union
 
-Convert to TIFF for printing on Epson 9900 with GIMP
+Large posters: Convert PDF to TIFF at 300 DPI for printing on Epson 9900 with GIMP
+
+Small cards: Print miscWrapper/miscWrapper.pdf onto heavy 11 x 17 in paper
+
